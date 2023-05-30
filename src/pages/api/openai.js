@@ -5,7 +5,7 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openAi = new OpenAIApi(configuration);
+const openAi = new OpenAIApi(configuration)
 
 export default async function handler(req, res) {
   const { prompt } = req.body; //stores the users input in the request body
