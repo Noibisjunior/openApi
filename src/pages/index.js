@@ -11,7 +11,7 @@ export default function Home() {
     e.preventDefault();
 
     try {
-      const res = await fetch('https://open-api-fawn.vercel.app/api/openai', {
+      const res = await fetch('/api/openai', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
