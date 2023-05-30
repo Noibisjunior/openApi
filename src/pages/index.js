@@ -6,12 +6,12 @@ export default function Home() {
   const [response, setResponse] = useState('');
 
   //async function that  submits the users input
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await fetch('/api/openai', {
+      const res = await fetch('https://open-api-fawn.vercel.app/api/openai', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
